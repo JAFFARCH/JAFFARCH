@@ -19,7 +19,7 @@
 .ring{transform-origin:600px 270px;animation:r 20s linear infinite}
 .ring2{transform-origin:600px 270px;animation:r 12s linear infinite reverse}
 @keyframes r{to{transform:rotate(360deg)}}
-.in{opacity:0;animation:f .7s ease-out forwards}
+.in{}
 @keyframes f{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .live{animation:b 1.5s ease-in-out infinite}
 @keyframes b{50%{opacity:.2}}
