@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Agent orchestration architecture">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#060a14"/><stop offset="1" stop-color="#0a1426"/></linearGradient>
+<radialGradient id="core" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#22d3ee" stop-opacity=".35"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+<linearGradient id="orch" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f2944"/><stop offset="1" stop-color="#1b1640"/></linearGradient>
+<linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity=".15"/><stop offset=".5" stop-color="#38bdf8" stop-opacity=".55"/><stop offset="1" stop-color="#a78bfa" stop-opacity=".15"/></linearGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#15233a"/></pattern>
+</defs>
+<style>
+.mono{font-family:'JetBrains Mono',Consolas,Menlo,monospace}
+.sans{font-family:'Inter','Segoe UI',-apple-system,Helvetica,Arial,sans-serif}
+.box{fill:#0c1628;stroke:#1f3a5c}
+.h{font-size:14px;font-weight:700;fill:#e6edf3}
+.sub{font-size:11px;fill:#7d93b3}
+.cap{font-size:11px;letter-spacing:2.5px;fill:#38bdf8}
+.fl{fill:none;stroke:url(#ln);stroke-width:1.4}
+.dash{stroke-dasharray:6 8;animation:d 1.2s linear infinite}
+@keyframes d{to{stroke-dashoffset:-28}}
+.ring{transform-origin:600px 270px;animation:r 20s linear infinite}
+.ring2{transform-origin:600px 270px;animation:r 12s linear infinite reverse}
+@keyframes r{to{transform:rotate(360deg)}}
+.in{opacity:0;animation:f .7s ease-out forwards}
+@keyframes f{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.live{animation:b 1.5s ease-in-out infinite}
+@keyframes b{50%{opacity:.2}}
+</style>
+<rect width="1200" height="560" rx="18" fill="url(#bg)"/>
+<rect width="1200" height="560" rx="18" fill="url(#dots)"/>
+<rect x=".5" y=".5" width="1199" height="559" rx="18" fill="none" stroke="#1d3656"/>
+<text class="mono cap" x="40" y="44">SYSTEM ARCHITECTURE</text>
+<text class="sans" x="40" y="72" font-size="22" font-weight="800" fill="#f1f5f9">Agent Orchestration Platform</text>
+<text class="mono sub" x="1160" y="44" text-anchor="end">event-driven · LLM-routed · feedback-learning</text>
+<circle class="live" cx="1080" cy="67" r="4" fill="#22c55e"/><text class="mono sub" x="1160" y="71" text-anchor="end">production</text>
+<text class="mono cap" x="40" y="112" fill="#5b7aa6">SOURCES</text>
+<text class="mono cap" x="1160" y="112" text-anchor="end">AUTONOMOUS AGENTS</text>
+
+<path id="s0" class="fl" d="M250 155 C 360 155, 360 270, 470 270"/>
+<g class="in" style="animation-delay:0.10s"><rect class="box" x="40" y="130" width="210" height="50" rx="10"/><circle cx="60" cy="155" r="4" fill="#38bdf8"/><text class="sans h" x="74" y="152">Email · Outlook / Gmail</text><text class="mono sub" x="74" y="169">MS Graph · Gmail API</text></g>
+<path id="s1" class="fl" d="M250 221 C 360 221, 360 270, 470 270"/>
+<g class="in" style="animation-delay:0.22s"><rect class="box" x="40" y="196" width="210" height="50" rx="10"/><circle cx="60" cy="221" r="4" fill="#38bdf8"/><text class="sans h" x="74" y="218">CRM · HubSpot / GHL</text><text class="mono sub" x="74" y="235">leads · deals · events</text></g>
+<path id="s2" class="fl" d="M250 287 C 360 287, 360 270, 470 270"/>
+<g class="in" style="animation-delay:0.34s"><rect class="box" x="40" y="262" width="210" height="50" rx="10"/><circle cx="60" cy="287" r="4" fill="#38bdf8"/><text class="sans h" x="74" y="284">Documents</text><text class="mono sub" x="74" y="301">PDF · TXT · Drive</text></g>
+<path id="s3" class="fl" d="M250 353 C 360 353, 360 270, 470 270"/>
+<g class="in" style="animation-delay:0.46s"><rect class="box" x="40" y="328" width="210" height="50" rx="10"/><circle cx="60" cy="353" r="4" fill="#38bdf8"/><text class="sans h" x="74" y="350">Voice</text><text class="mono sub" x="74" y="367">Twilio · Ooma · Whisper</text></g>
+<path id="s4" class="fl" d="M250 419 C 360 419, 360 270, 470 270"/>
+<g class="in" style="animation-delay:0.58s"><rect class="box" x="40" y="394" width="210" height="50" rx="10"/><circle cx="60" cy="419" r="4" fill="#38bdf8"/><text class="sans h" x="74" y="416">Webhooks &amp; Forms</text><text class="mono sub" x="74" y="433">Zapier · Shopify · Podia</text></g>
+<path id="a0" class="fl" d="M730 270 C 840 270, 840 146, 950 146"/>
+<g class="in" style="animation-delay:0.50s"><rect class="box" x="950" y="124" width="210" height="44" rx="10"/><circle class="live" style="animation-delay:0.00s" cx="1142" cy="146" r="3.5" fill="#22c55e"/><text class="sans h" x="968" y="143" font-size="13">Sales Agent</text><text class="mono sub" x="968" y="159">outreach · proposals</text></g>
+<path id="a1" class="fl" d="M730 270 C 840 270, 840 202, 950 202"/>
+<g class="in" style="animation-delay:0.62s"><rect class="box" x="950" y="180" width="210" height="44" rx="10"/><circle class="live" style="animation-delay:0.25s" cx="1142" cy="202" r="3.5" fill="#22c55e"/><text class="sans h" x="968" y="199" font-size="13">Marketing Agent</text><text class="mono sub" x="968" y="215">campaigns · SEO</text></g>
+<path id="a2" class="fl" d="M730 270 C 840 270, 840 258, 950 258"/>
+<g class="in" style="animation-delay:0.74s"><rect class="box" x="950" y="236" width="210" height="44" rx="10"/><circle class="live" style="animation-delay:0.50s" cx="1142" cy="258" r="3.5" fill="#22c55e"/><text class="sans h" x="968" y="255" font-size="13">Operations Agent</text><text class="mono sub" x="968" y="271">timelines · tasks</text></g>
+<path id="a3" class="fl" d="M730 270 C 840 270, 840 314, 950 314"/>
+<g class="in" style="animation-delay:0.86s"><rect class="box" x="950" y="292" width="210" height="44" rx="10"/><circle class="live" style="animation-delay:0.75s" cx="1142" cy="314" r="3.5" fill="#22c55e"/><text class="sans h" x="968" y="311" font-size="13">HR Agent</text><text class="mono sub" x="968" y="327">screening · interviews</text></g>
+<path id="a4" class="fl" d="M730 270 C 840 270, 840 370, 950 370"/>
+<g class="in" style="animation-delay:0.98s"><rect class="box" x="950" y="348" width="210" height="44" rx="10"/><circle class="live" style="animation-delay:1.00s" cx="1142" cy="370" r="3.5" fill="#22c55e"/><text class="sans h" x="968" y="367" font-size="13">Finance Agent</text><text class="mono sub" x="968" y="383">invoices · anomalies</text></g>
+<path id="a5" class="fl" d="M730 270 C 840 270, 840 426, 950 426"/>
+<g class="in" style="animation-delay:1.10s"><rect class="box" x="950" y="404" width="210" height="44" rx="10"/><circle class="live" style="animation-delay:1.25s" cx="1142" cy="426" r="3.5" fill="#22c55e"/><text class="sans h" x="968" y="423" font-size="13">Admin Agent</text><text class="mono sub" x="968" y="439">calendar · meeting prep</text></g>
+<path id="dn" class="fl dash" d="M570 352 L570 440"/><path id="up" class="fl dash" d="M630 440 L630 352"/>
+<text class="mono sub" x="580" y="400">write</text><text class="mono sub" x="640" y="400">retrieve</text>
+<circle r="3" fill="#7df9ff"><animateMotion dur="2.20s" begin="0.00s" repeatCount="indefinite"><mpath href="#s0"/></animateMotion></circle>
+<circle r="3" fill="#7df9ff"><animateMotion dur="2.45s" begin="0.35s" repeatCount="indefinite"><mpath href="#s1"/></animateMotion></circle>
+<circle r="3" fill="#7df9ff"><animateMotion dur="2.70s" begin="0.70s" repeatCount="indefinite"><mpath href="#s2"/></animateMotion></circle>
+<circle r="3" fill="#7df9ff"><animateMotion dur="2.95s" begin="1.05s" repeatCount="indefinite"><mpath href="#s3"/></animateMotion></circle>
+<circle r="3" fill="#7df9ff"><animateMotion dur="3.20s" begin="1.40s" repeatCount="indefinite"><mpath href="#s4"/></animateMotion></circle>
+<circle r="3" fill="#c4b5fd"><animateMotion dur="2.00s" begin="0.20s" repeatCount="indefinite"><mpath href="#a0"/></animateMotion></circle>
+<circle r="3" fill="#c4b5fd"><animateMotion dur="2.20s" begin="0.50s" repeatCount="indefinite"><mpath href="#a1"/></animateMotion></circle>
+<circle r="3" fill="#c4b5fd"><animateMotion dur="2.40s" begin="0.80s" repeatCount="indefinite"><mpath href="#a2"/></animateMotion></circle>
+<circle r="3" fill="#c4b5fd"><animateMotion dur="2.60s" begin="1.10s" repeatCount="indefinite"><mpath href="#a3"/></animateMotion></circle>
+<circle r="3" fill="#c4b5fd"><animateMotion dur="2.80s" begin="1.40s" repeatCount="indefinite"><mpath href="#a4"/></animateMotion></circle>
+<circle r="3" fill="#c4b5fd"><animateMotion dur="3.00s" begin="1.70s" repeatCount="indefinite"><mpath href="#a5"/></animateMotion></circle>
+<circle r="3" fill="#fbbf24"><animateMotion dur="1.6s" repeatCount="indefinite"><mpath href="#dn"/></animateMotion></circle>
+<circle r="3" fill="#4ade80"><animateMotion dur="1.6s" begin=".8s" repeatCount="indefinite"><mpath href="#up"/></animateMotion></circle>
+<circle cx="600" cy="270" r="150" fill="url(#core)"/>
+<circle class="ring" cx="600" cy="270" r="118" fill="none" stroke="#1e4a73" stroke-dasharray="3 9"/>
+<circle class="ring2" cx="600" cy="270" r="104" fill="none" stroke="#3b2f7a" stroke-dasharray="40 14 4 14"/>
+<g class="in" style="animation-delay:.3s">
+<rect x="470" y="188" width="260" height="164" rx="16" fill="url(#orch)" stroke="#2f6a9e" stroke-width="1.5"/>
+<text class="mono cap" x="600" y="216" text-anchor="middle">ORCHESTRATION CORE</text>
+<text class="sans" x="600" y="248" text-anchor="middle" font-size="20" font-weight="800" fill="#ffffff">n8n + LLM Router</text>
+<g class="mono" font-size="11.5" fill="#b8c7de" text-anchor="middle">
+<text x="600" y="276">intent classification · tool calling</text>
+<text x="600" y="296">conversation memory · guardrails</text>
+<text x="600" y="316">retries · observability · feedback</text>
+</g>
+<rect x="545" y="328" width="110" height="16" rx="8" fill="#0b1a2e" stroke="#1f4b73"/>
+<text class="mono" x="600" y="340" text-anchor="middle" font-size="10" fill="#7df9ff">GPT-4o · OpenAI API</text>
+</g>
+<g class="in" style="animation-delay:.9s">
+<rect x="300" y="440" width="600" height="84" rx="14" fill="#0b1424" stroke="#1f3a5c"/>
+<text class="mono cap" x="600" y="464" text-anchor="middle">KNOWLEDGE &amp; DATA LAYER</text>
+<g class="mono" font-size="12.5" fill="#dbe7f7" text-anchor="middle">
+<rect x="322" y="478" width="100" height="30" rx="8" fill="#101e33" stroke="#22406a"/><text x="372" y="498">Qdrant</text>
+<rect x="432" y="478" width="100" height="30" rx="8" fill="#101e33" stroke="#22406a"/><text x="482" y="498">Supabase</text>
+<rect x="542" y="478" width="116" height="30" rx="8" fill="#101e33" stroke="#22406a"/><text x="600" y="498">BigQuery</text>
+<rect x="668" y="478" width="100" height="30" rx="8" fill="#101e33" stroke="#22406a"/><text x="718" y="498">Astra DB</text>
+<rect x="778" y="478" width="100" height="30" rx="8" fill="#101e33" stroke="#22406a"/><text x="828" y="498">PostgreSQL</text>
+</g></g>
+<text class="mono sub" x="40" y="536">SERP API · Supabase scraper agents feed the knowledge layer</text>
+<text class="mono sub" x="1160" y="536" text-anchor="end">Slack · Google Docs · HubSpot · Instantly as sinks</text>
+</svg>

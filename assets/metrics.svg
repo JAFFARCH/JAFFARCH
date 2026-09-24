@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-label="Impact metrics">
+  <defs>
+    <linearGradient id="bar" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1629"/><stop offset="1" stop-color="#080d19"/></linearGradient>
+    <linearGradient id="shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  </defs>
+  <style>
+    .v{font-family:'Inter','Segoe UI',-apple-system,Helvetica,Arial,sans-serif;font-weight:800;font-size:40px;fill:#f1f5f9;letter-spacing:-1px}
+    .l{font-family:'JetBrains Mono',Consolas,Menlo,monospace;font-size:12.5px;fill:#8aa0bf;letter-spacing:.5px}
+    .t{font-family:'JetBrains Mono',Consolas,Menlo,monospace;font-size:11px;fill:#38bdf8;letter-spacing:2px}
+    .c{opacity:0;animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+    @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+    .s{animation:sh 6s ease-in-out infinite}
+    @keyframes sh{from{transform:translateX(-260px)}to{transform:translateX(1400px)}}
+  </style>
+
+  <g class="c" style="animation-delay:.1s">
+    <rect x="2" y="2" width="226" height="186" rx="14" fill="url(#cardbg)" stroke="#1d3656"/>
+    <text class="t" x="24" y="36">DATA SCALE</text>
+    <text class="v" x="24" y="94">350M+</text>
+    <text class="l" x="24" y="122">records normalized</text><text class="l" x="24" y="140">via production ETL</text>
+    <rect x="24" y="160" width="180" height="4" rx="2" fill="#15243c"/>
+    <rect x="24" y="160" width="0" height="4" rx="2" fill="url(#bar)"><animate attributeName="width" from="0" to="180" begin=".5s" dur="1.4s" fill="freeze" calcMode="spline" keySplines=".2 .7 .2 1" keyTimes="0;1"/></rect>
+  </g>
+  <g class="c" style="animation-delay:.3s">
+    <rect x="245" y="2" width="226" height="186" rx="14" fill="url(#cardbg)" stroke="#1d3656"/>
+    <text class="t" x="267" y="36">REVENUE SYSTEMS</text>
+    <text class="v" x="267" y="94">$1.36M+</text>
+    <text class="l" x="267" y="122">tracked in Airtable ×</text><text class="l" x="267" y="140">Shopify automation</text>
+    <rect x="267" y="160" width="180" height="4" rx="2" fill="#15243c"/>
+    <rect x="267" y="160" width="0" height="4" rx="2" fill="url(#bar)"><animate attributeName="width" from="0" to="150" begin=".7s" dur="1.4s" fill="freeze" calcMode="spline" keySplines=".2 .7 .2 1" keyTimes="0;1"/></rect>
+  </g>
+  <g class="c" style="animation-delay:.5s">
+    <rect x="488" y="2" width="226" height="186" rx="14" fill="url(#cardbg)" stroke="#1d3656"/>
+    <text class="t" x="510" y="36">AUTONOMY</text>
+    <text class="v" x="510" y="94">6 Agents</text>
+    <text class="l" x="510" y="122">running CEO-level</text><text class="l" x="510" y="140">operations end-to-end</text>
+    <rect x="510" y="160" width="180" height="4" rx="2" fill="#15243c"/>
+    <rect x="510" y="160" width="0" height="4" rx="2" fill="url(#bar)"><animate attributeName="width" from="0" to="165" begin=".9s" dur="1.4s" fill="freeze" calcMode="spline" keySplines=".2 .7 .2 1" keyTimes="0;1"/></rect>
+  </g>
+  <g class="c" style="animation-delay:.7s">
+    <rect x="731" y="2" width="226" height="186" rx="14" fill="url(#cardbg)" stroke="#1d3656"/>
+    <text class="t" x="753" y="36">PLATFORMS</text>
+    <text class="v" x="753" y="94">9+</text>
+    <text class="l" x="753" y="122">SaaS &amp; AI products</text><text class="l" x="753" y="140">shipped for clients</text>
+    <rect x="753" y="160" width="180" height="4" rx="2" fill="#15243c"/>
+    <rect x="753" y="160" width="0" height="4" rx="2" fill="url(#bar)"><animate attributeName="width" from="0" to="140" begin="1.1s" dur="1.4s" fill="freeze" calcMode="spline" keySplines=".2 .7 .2 1" keyTimes="0;1"/></rect>
+  </g>
+  <g class="c" style="animation-delay:.9s">
+    <rect x="974" y="2" width="224" height="186" rx="14" fill="url(#cardbg)" stroke="#1d3656"/>
+    <text class="t" x="996" y="36">RESEARCH</text>
+    <text class="v" x="996" y="94">IEEE</text>
+    <text class="l" x="996" y="122">Access publication</text><text class="l" x="996" y="140">first author · NLP × DL</text>
+    <rect x="996" y="160" width="180" height="4" rx="2" fill="#15243c"/>
+    <rect x="996" y="160" width="0" height="4" rx="2" fill="url(#bar)"><animate attributeName="width" from="0" to="180" begin="1.3s" dur="1.4s" fill="freeze" calcMode="spline" keySplines=".2 .7 .2 1" keyTimes="0;1"/></rect>
+  </g>
+  <rect class="s" x="0" y="0" width="220" height="190" fill="url(#shine)"/>
+</svg>
